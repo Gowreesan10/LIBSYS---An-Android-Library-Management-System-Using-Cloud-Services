@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-mdpi/img_clock.xml" value="0.2405" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-mdpi/img_featherarrowl.xml" value="0.279" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-mdpi/img_vector.xml" value="0.2405" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-v24/ic_baseline_search_24.xml" value="0.1875" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-v24/rectangle_bg_white_border_blue_500_radius_8.xml" value="0.2415" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-xhdpi/img_group2.xml" value="0.1995" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-xhdpi/img_icon.xml" value="0.1995" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-xhdpi/rectangle_bg_gray_100.xml" value="0.1995" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-xhdpi/rectangle_bg_white_a700_radius_10.xml" value="0.1995" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable-xxhdpi/rectangle_bg_blue_a400_radius_16.xml" value="0.207" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.2115" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1875" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/font/inter.xml" value="0.2501068832834545" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout-land/activity_new_user_home.xml" value="0.264" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_add_book_details.xml" value="0.22530996152201796" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_add_books.xml" value="0.264" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_add_library_books.xml" value="0.4" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_add_new_books.xml" value="0.264" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_book_details.xml" value="0.4" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_dashboard_admin.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_forget_password.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_getstarted.xml" value="0.176" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_main_page.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_new_user_home.xml" value="0.264" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_signin.xml" value="0.2" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_splash.xml" value="0.22530996152201796" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_updatedetails.xml" value="0.22530996152201796" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/activity_user_view_book_details.xml" value="0.176" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/add_book_details.xml" value="0.22530996152201796" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/book_iv.xml" value="0.22530996152201796" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/book_iv_recommanded_book.xml" value="0.536" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/book_rv_item.xml" value="0.536" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/btn_iv_book_category.xml" value="0.22530996152201796" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/fragment_admin_home.xml" value="0.22972972972972974" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/fragment_admin_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/fragment_admin_profile_frament.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/fragment_admin_request.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/fragment_user_book.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/fragment_user_home.xml" value="0.264" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/fragment_user_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/fragment_user_search.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/frame_layout_admin.xml" value="0.2" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/frame_layout_user.xml" value="0.2" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/image_slider.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/progress_bar.xml" value="0.22445489525438223" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/sample.xml" value="0.2537037037037037" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/slider_view.xml" value="0.2537037037037037" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/layout/temp.xml" value="0.2786885245901639" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/menu/bottom_nav_view_admin.xml" value="0.27447916666666666" />
+        <entry key="..\:/LIBSYS/LIBSYS/app/src/main/res/menu/bottom_nav_view_user.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "154216790172",
+    "project_id": "lib-sys-8c1ae",
+    "storage_bucket": "lib-sys-8c1ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154216790172:android:5a8692fd2612fe9b60d559",
+        "android_client_info": {
+          "package_name": "com.code10.libsys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154216790172-h747tisj13gn6m7ae0da0kdrv2pi3k1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSztDnMOSU2pKWeihqq108Xdi1Wb65XQQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154216790172-h747tisj13gn6m7ae0da0kdrv2pi3k1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

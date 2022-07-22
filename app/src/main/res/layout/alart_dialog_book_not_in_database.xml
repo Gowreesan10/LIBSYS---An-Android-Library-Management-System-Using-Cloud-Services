@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tvBookNotFound"
+    android:theme="@style/ThemeOverlay.AppCompat.Dialog"
+    android:weightSum="2">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/searchGoogleBooks"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Search In Google Books"
+        android:textAllCaps="false" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/enterManually"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Enter Details Manually"
+        android:textAllCaps="false" />
+</LinearLayout>

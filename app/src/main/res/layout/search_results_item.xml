@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/CVrecommandedBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5pxv"
+        android:layout_marginBottom="@dimen/_5pxv"
+        app:cardElevation="5dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bluegray_900">
+
+            <ImageView
+                android:id="@+id/IVrecommandedBook"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="0.8:1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintFrame21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                app:layout_constraintBottom_toTopOf="@+id/constraintFrame22"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toEndOf="@+id/IVrecommandedBook"
+                app:layout_constraintTop_toTopOf="@+id/IVrecommandedBook">
+
+                <TextView
+                    android:id="@+id/txtBookTitle1"
+                    style="@style/txtPoppinsmedium13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:text="@string/lbl_book_title_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/lbl_book_title_1" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintFrame35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_115pxh"
+                    android:layout_marginTop="@dimen/_3pxv"
+                    android:layout_marginEnd="@dimen/_11pxh"
+                    android:layout_marginBottom="@dimen/_3pxv"
+                    app:layout_constraintBottom_toBottomOf="@+id/txtBookTitle1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.89"
+                    app:layout_constraintStart_toEndOf="@+id/txtBookTitle1"
+                    app:layout_constraintTop_toTopOf="@+id/txtBookTitle1">
+
+                    <TextView
+                        android:id="@+id/txtRTV"
+                        style="@style/txtPoppinsregular11"
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3pxh"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/lbl_4_9"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageStar3"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageStar3"
+                        android:layout_width="@dimen/_12pxh"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="@dimen/_3pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_star3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintDimensionRatio="1.0:1.0"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtRTV"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintFrame22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                app:layout_constraintBottom_toTopOf="@+id/constraintFrame23"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toEndOf="@+id/IVrecommandedBook"
+                app:layout_constraintTop_toBottomOf="@+id/constraintFrame21">
+
+                <ImageView
+                    android:id="@+id/imageActionEdit"
+                    android:layout_width="@dimen/_16pxh"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_actionedit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1.0:1.0"
+                    app:layout_constraintEnd_toStartOf="@+id/txtAuther"
+                    app:layout_constraintHorizontal_bias="0.07"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtAuther"
+                    style="@style/txtPoppinsregular11"
+                    android:layout_width="@dimen/_100pxh"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/lbl_auther"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageActionEdit"
+                    app:layout_constraintEnd_toStartOf="@+id/txtPubName"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toEndOf="@+id/imageActionEdit"
+                    app:layout_constraintTop_toTopOf="@+id/imageActionEdit"
+                    tools:text="@string/lbl_auther" />
+
+                <TextView
+                    android:id="@+id/txtPubName"
+                    style="@style/txtPoppinsregular11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginEnd="@dimen/_80pxh"
+                    android:singleLine="false"
+                    android:text="@string/lbl_jinusan"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.06"
+                    app:layout_constraintStart_toEndOf="@+id/txtAuther"
+                    app:layout_constraintTop_toTopOf="@+id/imageActionEdit"
+                    tools:text="@string/lbl_jinusan" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintFrame23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                app:layout_constraintBottom_toTopOf="@+id/constraintFrame24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toEndOf="@+id/IVrecommandedBook"
+                app:layout_constraintTop_toBottomOf="@+id/constraintFrame22">
+
+                <ImageView
+                    android:id="@+id/imageContentStock"
+                    android:layout_width="@dimen/_16pxh"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_contentstock"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1.0:1.0"
+                    app:layout_constraintEnd_toStartOf="@+id/txtPublisher"
+                    app:layout_constraintHorizontal_bias="0.07"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtPublisher"
+                    style="@style/txtPoppinsregular11"
+                    android:layout_width="@dimen/_100pxh"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:text="@string/lbl_publisher"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageContentStock"
+                    app:layout_constraintEnd_toStartOf="@+id/txtPublisherName"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toEndOf="@+id/imageContentStock"
+                    app:layout_constraintTop_toTopOf="@+id/imageContentStock"
+                    tools:text="@string/lbl_publisher" />
+
+                <TextView
+                    android:id="@+id/txtPublisherName"
+                    style="@style/txtPoppinsregular11"
+                    android:layout_width="@dimen/_120pxh"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:singleLine="false"
+                    android:text="@string/msg_jinu_industri"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageContentStock"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.06"
+                    app:layout_constraintStart_toEndOf="@+id/txtPublisher"
+                    app:layout_constraintTop_toTopOf="@+id/imageContentStock"
+                    tools:text="@string/msg_jinu_industri" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintFrame24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_marginBottom="@dimen/_14pxv"
+                app:layout_constraintBottom_toBottomOf="@+id/IVrecommandedBook"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toEndOf="@+id/IVrecommandedBook"
+                app:layout_constraintTop_toBottomOf="@+id/constraintFrame23">
+
+                <ImageView
+                    android:id="@+id/imageVuesaxoutline"
+                    android:layout_width="@dimen/_16pxh"
+                    android:layout_height="0dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vuesaxoutline"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1.0:1.0"
+                    app:layout_constraintEnd_toStartOf="@+id/txtPublishedDate"
+                    app:layout_constraintHorizontal_bias="0.07"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtPublishedDate"
+                    style="@style/txtPoppinsregular11"
+                    android:layout_width="@dimen/_100pxh"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/lbl_published_date"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageVuesaxoutline"
+                    app:layout_constraintEnd_toStartOf="@+id/txtPubDate"
+                    app:layout_constraintHorizontal_bias="0.02"
+                    app:layout_constraintStart_toEndOf="@+id/imageVuesaxoutline"
+                    app:layout_constraintTop_toTopOf="@+id/imageVuesaxoutline"
+                    tools:text="@string/lbl_published_date" />
+
+                <TextView
+                    android:id="@+id/txtPubDate"
+                    style="@style/txtPoppinsregular11"
+                    android:layout_width="@dimen/_120pxh"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:singleLine="false"
+                    android:text="@string/lbl_2022_10_23"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageVuesaxoutline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.06"
+                    app:layout_constraintStart_toEndOf="@+id/txtPublishedDate"
+                    app:layout_constraintTop_toTopOf="@+id/imageVuesaxoutline"
+                    tools:text="@string/lbl_2022_10_23" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

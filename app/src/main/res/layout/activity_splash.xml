@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintSplash"
+        style="@style/groupStyleblue_A400"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtLIBSYS"
+            style="@style/txtPoppinssemibold40"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_118pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_103pxh"
+            android:layout_marginBottom="@dimen/_324pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/lbl_lib_sys"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageLayer2"
+            tools:text="@string/lbl_lib_sys" />
+
+        <ImageView
+            android:id="@+id/imageLayer2"
+            android:layout_width="@dimen/_83pxh"
+            android:layout_height="@dimen/_79pxh"
+            android:layout_marginStart="@dimen/_138pxh"
+            android:layout_marginTop="@dimen/_332pxv"
+            android:layout_marginEnd="@dimen/_138pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_icon_libsys"
+            app:layout_constraintBottom_toTopOf="@+id/txtLIBSYS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

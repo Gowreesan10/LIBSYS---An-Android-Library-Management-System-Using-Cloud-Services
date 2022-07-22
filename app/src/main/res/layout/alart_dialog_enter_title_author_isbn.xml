@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/idLLsearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_16pxh"
+    android:weightSum="5">
+
+    <!--edit text for getting the search
+        query for book from user-->
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/idEdtSearchBooks"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.2"
+        android:hint="@string/enter_book_name" />
+
+    <!--image button for our search button -->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/idBtnSearch"
+        style="@style/btnSolidRounded_1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:contentDescription="@string/search_book"
+        android:src="@drawable/ic_baseline_search_40" />
+
+</LinearLayout>

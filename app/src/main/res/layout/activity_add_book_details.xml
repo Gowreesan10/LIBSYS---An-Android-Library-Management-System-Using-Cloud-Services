@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup28"
+        style="@style/groupStylegray_100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollViewScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_13pxv"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarToolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintAddBooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginEnd="@dimen/_16pxh">
+
+                <ImageView
+                    android:id="@+id/IVbookCover"
+                    android:layout_width="@dimen/_110pxh"
+                    android:layout_height="@dimen/_156pxh"
+                    android:layout_marginStart="@dimen/_108pxh"
+                    android:layout_marginEnd="@dimen/_110pxh"
+                    android:text="@string/category"
+                    android:src="@drawable/click_to_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                     />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddBook"
+                    style="@style/btnSolidRounded"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40pxv"
+                    android:layout_marginStart="@dimen/_65pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_marginEnd="@dimen/_65pxh"
+                    android:layout_marginBottom="@dimen/_25pxh"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/lbl_add_book"
+                    android:textAllCaps="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CVebook"
+                    tools:ignore="TouchTargetSizeCheck"
+                    tools:text="@string/lbl_add_book" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CVbookDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_11pxv"
+                    app:cardCornerRadius="@dimen/_10pxv"
+                    app:cardPreventCornerOverlap="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/IVbookCover">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintGroup24"
+                        style="@style/groupStylewhite_A700cornerRadius"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/TVtitle"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_5pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="@string/lbl_title" />
+
+                        <EditText
+                            android:id="@+id/ETtitle"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_enter_title"
+                            android:minHeight="48dp"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:singleLine="false"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TVtitle" />
+
+                        <TextView
+                            android:id="@+id/txtAuthor"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_author"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ETsubtitle"
+                            tools:text="@string/lbl_author" />
+
+                        <EditText
+                            android:id="@+id/ETauthor"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/msg_enter_author_na"
+                            android:minHeight="48dp"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:singleLine="false"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtAuthor" />
+
+                        <TextView
+                            android:id="@+id/txtPublisher"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_publisher"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ETauthor"
+                            tools:text="@string/lbl_publisher" />
+
+                        <EditText
+                            android:id="@+id/ETpublisher"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/msg_enter_publisher"
+                            android:minHeight="48dp"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:singleLine="false"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtPublisher" />
+
+                        <TextView
+                            android:id="@+id/txtPublishedDate"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_published_date"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ETpublisher"
+                            tools:text="@string/lbl_published_date" />
+
+                        <EditText
+                            android:id="@+id/ETpublishDate"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/msg_enter_published"
+                            android:minHeight="48dp"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:singleLine="true"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtPublishedDate" />
+
+                        <TextView
+                            android:id="@+id/txt_ISBN13"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_isbn_13"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ETkeywords"
+                            tools:text="@string/lbl_isbn_13" />
+
+                        <EditText
+                            android:id="@+id/ETISBN_13"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_enter_isbn_13"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:singleLine="true"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt_ISBN13" />
+
+                        <TextView
+                            android:id="@+id/txtKeywords"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:visibility="gone"
+                            android:singleLine="true"
+                            android:text="@string/lbl_keywords"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ETcategory"
+                            tools:text="@string/lbl_keywords" />
+
+                        <EditText
+                            android:id="@+id/ETkeywords"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:visibility="gone"
+                            android:hint="@string/lbl_enter_keywords"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:singleLine="false"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtKeywords" />
+
+                        <TextView
+                            android:id="@+id/txtISBN10"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_isbn_10"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ETISBN_13"
+                            tools:text="@string/lbl_isbn_10" />
+
+                        <EditText
+                            android:id="@+id/ETISBN_10"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_enter_isbn_10"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:singleLine="true"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtISBN10" />
+
+                        <TextView
+                            android:id="@+id/TVsubtitle"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_sub_title"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ETtitle"
+                            tools:text="@string/lbl_sub_title" />
+
+                        <EditText
+                            android:id="@+id/ETsubtitle"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/lbl_enter_subtitle"
+                            android:minHeight="48dp"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:singleLine="false"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TVsubtitle" />
+
+                        <TextView
+                            android:id="@+id/TVcategory"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/category"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ETpublishDate"
+                             />
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/ETcategory"-->
+<!--                            style="@style/etSolidRoundedOutline_2"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginStart="@dimen/_9pxh"-->
+<!--                            android:layout_marginTop="@dimen/_4pxv"-->
+<!--                            android:layout_marginEnd="@dimen/_9pxh"-->
+<!--                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"-->
+<!--                            android:drawableEnd="@drawable/img_icon"-->
+<!--                            android:drawablePadding="@dimen/_10pxh"-->
+<!--                            android:ellipsize="end"-->
+<!--                            android:hint="Select Catagory"-->
+<!--                            android:paddingStart="@dimen/_16pxh"-->
+<!--                            android:paddingTop="@dimen/_13pxv"-->
+<!--                            android:paddingEnd="@dimen/_8pxh"-->
+<!--                            android:paddingBottom="@dimen/_13pxv"-->
+<!--                            android:singleLine="true"-->
+<!--                            android:textColorHint="@color/bluegray_400"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/TVcategory" />-->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ETcategory"
+                            style="@style/dropdownMenu"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:fontFamily="@font/poppins"
+                            android:hint="Select Category"
+                            android:textColor="@color/black"
+                            app:hintTextAppearance="@style/etSolidRoundedOutline_1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TVcategory">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/selectCatagory"
+                            style="@style/etSolidRoundedOutline_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:textColorHint="#78909C" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintFrame32"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ETISBN_10">
+
+                            <TextView
+                                android:id="@+id/TVpageCount"
+                                style="@style/txtPoppinsregular14"
+                                android:layout_width="@dimen/_146pxh"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@string/lbl_page_count"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:text="@string/lbl_page_count" />
+
+                            <EditText
+                                android:id="@+id/ETpageCount"
+                                style="@style/txtInterregular12"
+                                android:layout_width="@dimen/_146pxh"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:hint="Enter No of Pages"
+                                android:paddingStart="@dimen/_16pxh"
+                                android:paddingTop="@dimen/_9pxv"
+                                android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                                android:paddingBottom="@dimen/_9pxv"
+                                android:textColorHint="@color/bluegray_400"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/TVpageCount" />
+
+                            <TextView
+                                android:id="@+id/TVrating"
+                                style="@style/txtPoppinsregular14"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:ellipsize="end"
+                                android:singleLine="true"
+                                android:text="@string/lbl_rating"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/TVpageCount"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:text="@string/lbl_rating" />
+
+                            <EditText
+                                android:id="@+id/ETrating"
+                                style="@style/txtInterregular12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:hint="Enter Rating"
+                                android:paddingStart="@dimen/_16pxh"
+                                android:paddingTop="@dimen/_9pxv"
+                                android:paddingBottom="@dimen/_9pxv"
+                                android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/ETpageCount"
+                                app:layout_constraintTop_toBottomOf="@+id/TVpageCount" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/TVdescription"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_description"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintFrame32"
+                            tools:text="@string/lbl_description" />
+
+                        <EditText
+                            android:id="@+id/ETdescription"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:layout_marginBottom="@dimen/_9pxv"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/msg_enter_descripti"
+                            android:minHeight="48dp"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_11pxv"
+                            android:paddingBottom="@dimen/_11pxv"
+                            android:singleLine="false"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TVdescription" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CVcopyDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    app:cardCornerRadius="@dimen/_10pxv"
+                    app:cardPreventCornerOverlap="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CVbookDetails">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintGroup100000077"
+                        style="@style/groupStylewhite_A700cornerRadius"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/TVcopies"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_no_of_copies"
+                            app:layout_constraintBottom_toTopOf="@+id/ETcopies"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtDetailsOfCopies"
+                            tools:text="@string/lbl_no_of_copies" />
+
+                        <EditText
+                            android:id="@+id/ETcopies"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:layout_marginBottom="@dimen/_9pxv"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/msg_enter_no_of_cop"
+                            android:minHeight="48dp"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_9pxv"
+                            android:paddingBottom="@dimen/_9pxv"
+                            android:singleLine="true"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TVcopies" />
+
+                        <TextView
+                            android:id="@+id/txtDetailsOfCopies"
+                            style="@style/txtPoppinsmedium14_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/msg_details_of_copi"
+                            app:layout_constraintBottom_toTopOf="@+id/TVcopies"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="@string/msg_details_of_copi" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/CVebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_13pxv"
+                    app:cardCornerRadius="10dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/CVcopyDetails">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintFrame100000078"
+                        style="@style/groupStylewhite_A700cornerRadius"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/TVEBookDetails"
+                            style="@style/txtPoppinsmedium14_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/lbl_e_book_details"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="@string/lbl_e_book_details" />
+
+                        <TextView
+                            android:id="@+id/TVbookDownloadlink"
+                            style="@style/txtPoppinsregular14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_2pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:ellipsize="end"
+                            android:gravity="start"
+                            android:singleLine="true"
+                            android:text="@string/msg_e_book_download"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TVEBookDetails"
+                            tools:text="@string/msg_e_book_download" />
+
+                        <EditText
+                            android:id="@+id/ETdownloadLink"
+                            style="@style/txtInterregular12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_9pxh"
+                            android:layout_marginTop="@dimen/_4pxv"
+                            android:layout_marginEnd="@dimen/_9pxh"
+                            android:layout_marginBottom="@dimen/_9pxv"
+                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
+                            android:ellipsize="end"
+                            android:hint="@string/msg_enter_download"
+                            android:paddingStart="@dimen/_16pxh"
+                            android:paddingTop="@dimen/_13pxv"
+                            android:paddingBottom="@dimen/_13pxv"
+                            android:singleLine="true"
+                            android:textColorHint="@color/bluegray_400"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/TVbookDownloadlink" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintGroup26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginEnd="@dimen/_20pxh">
+
+                <ImageView
+                    android:id="@+id/imageGroup2"
+                    android:layout_width="@dimen/_30pxh"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_marginEnd="@dimen/_298pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.03"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtAddBooks"
+                    style="@style/txtPoppinsmedium18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/lbl_add_books"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/lbl_add_books" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

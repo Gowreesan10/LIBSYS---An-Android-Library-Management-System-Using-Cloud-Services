@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGetStarted"
+        style="@style/groupStyleblack_900"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/_4pxh"
+        android:paddingRight="@dimen/_4pxh">
+
+        <ImageView
+            android:id="@+id/imageAssetsLogoma"
+            android:layout_width="@dimen/_64pxh"
+            android:layout_height="@dimen/_64pxh"
+            android:layout_marginStart="@dimen/_147pxh"
+            android:layout_marginTop="@dimen/_179pxv"
+            android:layout_marginEnd="@dimen/_148pxh"
+            android:layout_marginBottom="@dimen/_24pxv"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_icon_libsys"
+            app:layout_constraintBottom_toTopOf="@+id/txtLIBSYS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtLIBSYS"
+            style="@style/txtInterextrabold34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginBottom="@dimen/_24pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/lbl_lib_sys"
+            app:layout_constraintBottom_toTopOf="@+id/txtBuildRapidMob"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/lbl_lib_sys" />
+
+        <TextView
+            android:id="@+id/txtBuildRapidMob"
+            style="@style/txtInterregular14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_24pxv"
+            android:layout_marginEnd="@dimen/_41pxh"
+            android:layout_marginBottom="@dimen/_177pxv"
+            android:gravity="center"
+            android:text="@string/msg_build_rapid_mob"
+            app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/msg_build_rapid_mob" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGetStarted"
+            style="@style/btnSolidRounded_1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_177pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/lbl_get_started"
+            app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/lbl_get_started" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            style="@style/btnSolidRounded_2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50pxv"
+            android:layout_marginStart="@dimen/_18pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_18pxh"
+            android:layout_marginBottom="@dimen/_32pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_13pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_13pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_login"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/txtBySelectingOn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/lbl_login" />
+
+        <TextView
+            android:id="@+id/txtBySelectingOn"
+            style="@style/txtInterregular12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginBottom="@dimen/_24pxv"
+            android:gravity="center"
+            android:text="@string/msg_by_selecting_on"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/msg_by_selecting_on" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/selecterCard"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/_4pxh"
+    app:cardCornerRadius="@dimen/_17pxv">
+
+    <TextView
+        android:id="@+id/btnFiction"
+        style="@style/btnRoundedOutline"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_30pxv"
+        android:layout_marginTop="@dimen/_1pxv"
+        android:layout_marginBottom="@dimen/_1pxv"
+        android:paddingStart="@dimen/_10pxh"
+        android:paddingTop="@dimen/_6pxv"
+        android:paddingEnd="@dimen/_10pxh"
+        android:paddingBottom="@dimen/_4pxv"
+        android:singleLine="true"
+        android:textAllCaps="false" />
+
+</com.google.android.material.card.MaterialCardView>
+
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:layout_width="@dimen/_53pxh"-->
+    <!--android:layout_height="@dimen/_36pxv"-->
+    <!--app:cardCornerRadius="@dimen/_17pxv">-->
+
+
+    <!--</androidx.cardview.widget.CardView>-->

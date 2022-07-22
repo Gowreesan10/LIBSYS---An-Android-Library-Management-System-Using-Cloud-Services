@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintSignin"
+        style="@style/groupStyleblack_900"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/_4pxh"
+        android:paddingRight="@dimen/_4pxh">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintTopBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginEnd="@dimen/_141pxh">
+
+                <TextView
+                    android:id="@+id/txtSignIn"
+                    style="@style/txtPoppinsmedium18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_91pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_marginBottom="@dimen/_12pxv"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/lbl_sign_in"
+                    android:textColor="#616161"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageBack"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@string/lbl_sign_in" />
+
+                <ImageView
+                    android:id="@+id/imageBack"
+                    android:layout_width="@dimen/_30pxh"
+                    android:layout_height="@dimen/_30pxh"
+                    android:src="@drawable/img_group2"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/txtSignIn"
+                    app:layout_constraintHorizontal_bias="0.07"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignIn"
+            style="@style/btnSolidRounded"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/lbl_sign_in"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtForgotPassword"
+            tools:text="@string/lbl_sign_in" />
+
+        <TextView
+            android:id="@+id/txtWelcomeBack"
+            style="@style/txtPoppinssemibold24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/lbl_welcome_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarToolbar"
+            tools:text="@string/lbl_welcome_back" />
+
+        <TextView
+            android:id="@+id/txtPleaseInterYo"
+            style="@style/txtPoppinsregular14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_24pxh"
+            android:layout_marginTop="@dimen/_12pxv"
+            android:layout_marginEnd="@dimen/_24pxh"
+            android:gravity="start"
+            android:text="@string/msg_please_inter_yo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtWelcomeBack"
+            tools:text="@string/msg_please_inter_yo" />
+
+        <EditText
+            android:id="@+id/etSigninEmail"
+            style="@style/etSolidRoundedOutline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:background="@drawable/rectangle_bg_black_900_border_blue_a400_radius_16"
+            android:ellipsize="end"
+            android:hint="@string/enter_your_email"
+            android:paddingStart="@dimen/_20pxh"
+            android:paddingTop="@dimen/_22pxv"
+            android:paddingBottom="@dimen/_22pxv"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPleaseInterYo" />
+
+        <EditText
+            android:id="@+id/etSigninPassword"
+            style="@style/etSolidRoundedOutline_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:background="@drawable/rectangle_bg_black_900_border_blue_a400_radius_16"
+            android:ellipsize="end"
+            android:hint="@string/msg_enter_your_pass"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_20pxh"
+            android:paddingTop="@dimen/_22pxv"
+            android:paddingBottom="@dimen/_22pxv"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSigninEmail" />
+
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            style="@style/txtPoppinsmedium14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_210pxh"
+            android:layout_marginTop="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:singleLine="true"
+            android:text="@string/msg_forgot_password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSigninPassword"
+            tools:text="@string/msg_forgot_password" />
+
+        <TextView
+            android:id="@+id/txtNotRegistered"
+            style="@style/txtOpenSansmedium14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_83pxh"
+            android:layout_marginTop="@dimen/_182pxv"
+            android:layout_marginEnd="@dimen/_84pxh"
+            android:layout_marginBottom="@dimen/_60pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/msg_not_registered"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
+            tools:text="@string/msg_not_registered" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:padding="@dimen/_150pxh"
+            android:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

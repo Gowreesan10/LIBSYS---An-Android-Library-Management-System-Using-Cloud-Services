@@ -1,0 +1,73 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/libraryDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2pxh"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:id="@+id/linearWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageListprefix"
+            android:layout_width="@dimen/_24pxh"
+            android:layout_height="@dimen/_43pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_listprefix_3" />
+
+        <LinearLayout
+            android:id="@+id/linearWrapper1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginBottom="@dimen/_8pxv"
+            android:layout_weight="0.92"
+            android:gravity="start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/libraryName"
+                style="@style/txtIntermedium14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Library Name" />
+
+            <TextView
+                android:id="@+id/AvailableBookCount"
+                style="@style/txtInterregular12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Available Books : 10" />
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/txtInterregular12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="No 106/1, Sivan kovil Road, Thonikkal Vavuniya" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+

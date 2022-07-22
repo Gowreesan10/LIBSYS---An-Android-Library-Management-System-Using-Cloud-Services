@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/linearGroup"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5pxh"
+        android:gravity="start"
+
+        android:orientation="vertical"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:id="@+id/linearGroup7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bookCoverIv"
+                android:layout_width="@dimen/_41pxh"
+                android:layout_height="@dimen/_58pxh"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_12pxv"
+                android:src="@drawable/ic_launcher_background"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/linearGroup6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10pxv"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginBottom="@dimen/_3pxv"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Book_Name"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Gowreeshan Sachchithananthan" />
+
+                <TextView
+                    android:id="@+id/requester"
+                    style="@style/TextAppearance.MaterialComponents.Body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Requested By : Gowreeshan" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

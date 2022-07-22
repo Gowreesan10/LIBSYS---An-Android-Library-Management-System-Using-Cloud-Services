@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string-array name="borrow_Method">
+        <item>By Post</item>
+        <item>By hand</item>
+    </string-array>
+
+    <string name="app_name">LIB SYS</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_update_details">Update Details</string>
+    <string name="msg_forget_password">Forget Password ?</string>
+    <string name="lbl_enter_your_mail">Enter your mail</string>
+    <string name="msg_albart_ainstain">albart.ainstain@gmail.com</string>
+    <string name="lbl_age">Age</string>
+    <string name="msg_please_inter_yo2">Please Enter your Information and create your account</string>
+    <string name="msg_please_inter_yo3">Please Enter your Details </string>
+    <string name="lbl_login">Login</string>
+    <string name="msg_by_selecting_on">By selecting one or the other, you are agreeing to the Terms of Services &amp; Privacy Policy</string>
+    <string name="msg_by_selecting_on2">By selecting one or the other, you are agreeing to the </string>
+    <string name="lbl_albert_ainstain">Albert Ainstain</string>
+    <string name="msg_enter_your_pass">Enter your password</string>
+    <string name="lbl_create_account">Create Account</string>
+    <string name="msg_conform_your_pa">Conform your password</string>
+    <string name="lbl_sign_in">Sign In</string>
+    <string name="msg_not_registered">Not Registered Yet? Sign Up</string>
+    <string name="msg_not_registered2">Not Registered Yet?</string>
+    <string name="msg_have_an_account">Have an Account? Sign In</string>
+    <string name="lbl_welcome_back">Welcome Back</string>
+    <string name="msg_terms_of_service">Terms of Services</string>
+    <string name="msg_please_inter_yo">Please Inter your email address and password for Login</string>
+    <string name="lbl_get_started">Get started</string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="lbl_lib_sys">LIB SYS</string>
+    <string name="msg_forgot_password">Forgot Password?</string>
+    <string name="lbl_update">Update</string>
+    <string name="lbl_privacy_policy">Privacy Policy</string>
+    <string name="lbl_address">Address</string>
+    <string name="lbl"> &amp; </string>
+    <string name="lbl_submit">Submit</string>
+    <string name="msg_have_an_account2">Have an Account?</string>
+    <string name="msg_recover_passwor">Recover password if you have forget the password !</string>
+    <string name="msg_build_rapid_mob">Build rapid mobile design patterns with Bloodl UI library for Figma</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="select_role">Select Role</string>
+    <string-array name="Roles">
+        <item>Librarian</item>
+        <item>User</item>
+    </string-array>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="borrowed">Borrowed</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_recently_viewed">Recently Viewed</string>
+    <string name="lbl_see_all">See All</string>
+    <string name="msg_search_for_book">Search Books</string>
+    <string name="lbl_gowreeshan">Gowreeshan</string>
+    <string name="msg_recommanded_boo">Recommanded Books</string>
+    <string name="lbl_most_popular">Popular Books</string>
+    <string name="lbl_all">All</string>
+    <string name="lbl_catagory">Catogary</string>
+    <string name="lbl_newly_added">Newly Added</string>
+    <string name="lbl_book_title">Book Title</string>
+    <string name="profileimage">ProfileImage</string>
+    <string name="borrow_requests">Borrow Requests</string>
+    <string name="requests">Requests</string>
+    <string name="add_books">Add Books</string>
+    <string name="search_book">Search Book</string>
+    <string name="book_title">Book Title</string>
+    <string name="page_count">Page count</string>
+    <string name="date">date</string>
+    <string name="publisher">Publisher</string>
+    <string name="bookcover">BookCover</string>
+    <string name="enter_book_name">Enter Book Name</string>
+    <string name="lbl_published_date">Published Date</string>
+    <string name="lbl_page_count">Page Count</string>
+    <string name="msg_99_nguyen_dinh">99 Nguyen Dinh Chieu</string>
+    <string name="lbl_title">Title</string>
+    <string name="lbl_sub_title">Sub Title</string>
+    <string name="lbl_upload_image">Upload Image</string>
+    <string name="lbl_genere">Genere</string>
+    <string name="lbl_subject">Subject</string>
+    <string name="lbl_description">Description</string>
+    <string name="lbl_auther">Author</string>
+    <string name="lbl_rating">Rating</string>
+    <string name="lbl_select_subject">Select Subject</string>
+    <string name="lbl_4_5">4.5</string>
+    <string name="lbl_publisher">Publisher</string>
+    <string name="lbl_select_genere">Select Genere</string>
+    <string name="lbl_add_book">Add Book</string>
+    <string name="lbl_120">120</string>
+    <string name="category">Category</string>
+    <string name="lbl_e_book_details">E Book Details</string>
+    <string name="msg_details_of_copi">Details Of Copies</string>
+    <string name="lbl_isbn_13">ISBN-13</string>
+    <string name="lbl_enter_keywords">Enter Keywords</string>
+    <string name="msg_enter_download">Enter Download Link</string>
+    <string name="lbl_add_books">Add Books</string>
+    <string name="lbl_enter_subtitle">Enter SubTitle</string>
+    <string name="msg_no_of_barrowabl">No Of Barrowable Copies </string>
+
+    <string name="msg_enter_no_of_cop">Enter No Of Copies</string>
+    <string name="lbl_enter_isbn_10">Enter ISBN-10</string>
+    <string name="lbl_enter_isbn_13">Enter ISBN-13</string>
+    <string name="lbl_keywords">Keywords</string>
+    <string name="msg_enter_no_of_bar">Enter No Of Barrowable Copies</string>
+    <string name="msg_enter_descripti">Enter Description</string>
+    <string name="msg_enter_publisher">Enter Publisher Details</string>
+    <string name="lbl_no_of_copies">No Of Copies </string>
+    <string name="lbl_enter_title">Enter Title</string>
+    <string name="msg_enter_author_na">Enter Author Name</string>
+    <string name="msg_e_book_download">E Book Download Link</string>
+    <string name="lbl_isbn_10">ISBN-10</string>
+    <string name="msg_enter_published">Enter Published Date</string>
+    <string name="lbl_author">Author</string>
+
+
+    <string name="lbl_science">Science</string>
+    <string name="lbl_2022_10_23">: 2022.10.23</string>
+    <string name="lbl_book_title_1">Book Title 1</string>
+    <string name="msg_search_author">Search Author , Title or ISBN</string>
+    <string name="msg_most_popular_bo">Most Popular Books</string>
+    <string name="lbl_fiction">Fiction</string>
+    <string name="msg_jinu_industri">: jinu industries</string>
+    <string name="lbl_drama">Drama</string>
+    <string name="lbl_4_9">4.9</string>
+    <string name="lbl_jinusan">: Jinusan</string>
+    <string name="msg_art_architect">Art &amp; Architecture</string>
+
+
+    <string name="msg_by_auther_jinus2">by auther jinushan </string>
+    <string name="lbl_category">Category</string>
+    <string name="msg_by_auther_jinus">by auther jinushan kutty</string>
+
+    <string name="msg_more_book_like">More Book Like This</string>
+    <string name="lbl_125">125</string>
+    <string name="lbl_action">Action</string>
+    <string name="lbl_book_summary">Book Summary</string>
+    <string name="lbl_download_e_book">Download E Book</string>
+    <string name="lbl_pages">pages</string>
+    <string name="msg_borrowable_peri">Borrowable Period</string>
+    <string name="lbl_1hr_30m">1hr 30m</string>
+    <string name="lbl_123456789222">123456789222</string>
+    <string name="lbl_4_2">4.2</string>
+    <string name="lbl_2022_10_10">2022.10.10</string>
+    <string name="lbl_kutty">kutty</string>
+    <string name="msg_1458263257852_5">1458263257852-522</string>
+    <string name="msg_lorem_ipsum_dol">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat vel in mauris lacus, et euismod suscipit. Sed diam fermentum convallis varius. Facilisis auctor lorem scelerisque porttitor scelerisque egestas laoreet quis. Urna ornare amet, sem lacinia lorem at justo, varius.</string>
+    <string name="msg_book_title_1234">BOOK TITLE 123456778</string>
+    <string name="lbl_borrow_book">Borrow Book</string>
+    <string name="enter_library_name">Enter Library Name</string>
+    <string name="set_location">Set Location</string>
+    <string name="please_enter_library_details">Please Enter Library Details</string>
+    <string name="action_geolocate">Pick Place</string>
+    <string name="default_info_title">Default Location</string>
+    <string name="default_info_snippet">No places found, because location permission is disabled.</string>
+    <string name="google_maps_key">AIzaSyCJfu9UsL3HZMXi-SOGyd7WZSxIK_pHq3Y</string>
+    <string name="lbl_available_in">Available In</string>
+
+    <string name="msg_update_library">Update Library Details</string>
+    <string name="msg_please_enter_yo">Please Enter Your Information </string>
+    <string name="lbl_telephone_no">Telephone No</string>
+    <string name="lbl_fax_no">Fax No</string>
+    <string name="msg_select_profile">Select Image</string>
+
+    <string name="lbl_choose_location">Choose Location</string>
+    <string name="msg_please_enter_li">Please Enter Library Information </string>
+
+
+    <string name="lbl_view_all_books">View All Books</string>
+    <string name="lbl_view_all_users">View All Users</string>
+    <string name="msg_add_returned_bo">Add returned book</string>
+
+    <string name="lbl_remove_book">Remove Book</string>
+    <string name="lbl_add_new_book">Add new Book</string>
+    <string name="lbl_settings">Settings</string>
+
+    <string name="lbl_more">More</string>
+    <string name="lbl_alfa_roni">Alfa Roni</string>
+    <string name="lbl_malang">Malang</string>
+    <string name="msg_account_setting">Account Settings</string>
+    <string name="msg_born_november_2">Born November 26, 1994</string>
+    <string name="msg_add_a_payment_m">Add a payment method</string>
+    <string name="msg_push_notificati">Push notifications</string>
+    <string name="lbl_edit_profile">Edit profile</string>
+    <string name="lbl_about_us">About us</string>
+    <string name="lbl_change_password">Change password</string>
+    <string name="lbl_dark_mode">Dark mode</string>
+    <string name="msg_terms_and_condi">Terms and conditions</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="author">Author</string>
+
+
+    <string name="msg_no_files_select">No files selected</string>
+
+    <string name="lbl_today_date">Today Date</string>
+
+    <string name="lbl_125_pages">125 Pages</string>
+    <string name="lbl_borrow_period">Borrow Period</string>
+    <string name="lbl_borrowable_time">Borrowable Time</string>
+
+    <string name="msg_barrowing_metho">Barrowing Method</string>
+    <string name="lbl_return_date">Return Date</string>
+
+    <string name="lbl_barrowing_fees">Barrowing Fees</string>
+
+    <string name="lbl_5_day_after">5 day after</string>
+
+    <string name="msg_transection_fee">Transection Fees will be refunded if Barrow request is not accepted for any reasons.\nUser can contact library for any queries regarding barrow request\n
+User will be charged Rs 10 per day, if user hold book after the returning day. </string>
+
+    <string name="lbl_book_details">Book Details</string>
+
+    <string name="msg_upload_transect">Upload Transection Fees Receipt</string>
+    <string name="lbl_upload_file">Upload File</string>
+
+    <string name="msg_transection_det">Transection Details</string>
+    <string name="lbl_borrow_date">Borrow Date</string>
+
+    <string name="lbl_cancel">Cancel</string>
+
+    <string name="msg_send_barrow_req">Send Barrow Request</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="select_borrow_method">Select Borrow Method</string>
+
+    <string-array name="Categories">
+        <item>All</item>
+        <item>Art and Architecture</item>
+        <item>Biography</item>
+        <item>Comics</item>
+        <item>Computer</item>
+        <item>Fiction</item>
+        <item>Games</item>
+        <item>Health</item>
+        <item>History</item>
+        <item>House and Home</item>
+        <item>Law</item>
+        <item>Languages</item>
+        <item>Mathematics</item>
+    </string-array>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

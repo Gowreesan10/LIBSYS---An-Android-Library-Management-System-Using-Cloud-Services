@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50pxh"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_25pxh"
+            android:layout_marginTop="@dimen/_100pxh"
+            android:layout_marginEnd="@dimen/_25pxh"
+            android:singleLine="false" />
+
+
+        <EditText
+            android:id="@+id/token"
+            style="@style/btnRoundedOutline"
+            android:layout_width="@dimen/_300pxh"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_100pxh"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/messageet"
+            android:layout_width="@dimen/_300pxh"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_100pxh"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Button" />
+    </LinearLayout>
+</layout>

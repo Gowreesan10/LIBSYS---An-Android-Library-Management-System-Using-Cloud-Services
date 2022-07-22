@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/_16pxh"
+    android:layout_marginTop="@dimen/_8pxh"
+    android:layout_marginEnd="@dimen/_16pxh"
+    tools:context=".Admin.AddBooks">
+
+    <LinearLayout
+        android:id="@+id/idBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_4pxh"
+                android:src="@drawable/img_group2">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textDatabaseBook"
+                style="@style/txtPoppinsmedium16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="Books Already Existing in Libraries"
+                android:textColor="@color/blue_600" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40pxh"
+            android:layout_weight="1">
+            <!--edit text for getting the search
+            query for book from user-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/idEdtSearchBooks"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4.2"
+                android:background="@color/white"
+                android:hint="@string/enter_book_name"
+                android:padding="@dimen/_2pxh"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <!--image button for our search button -->
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/idBtnSearch"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:contentDescription="@string/search_book"
+                android:src="@drawable/ic_baseline_search_40"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVBooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBox"
+        tools:itemCount="3"
+        tools:listitem="@layout/book_rv_item" />
+
+    <!--progressbar for displaying our loading indicator-->
+    <ProgressBar
+        android:id="@+id/idLoadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

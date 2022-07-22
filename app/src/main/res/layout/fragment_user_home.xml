@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintGroup16"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollViewScrollview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintNewUserHome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16pxh">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup8"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/recyclerNewUserHome">
+
+                    <TextView
+                        android:id="@+id/txtMostPopularBo"
+                        style="@style/txtPoppinsmedium18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:text="Recently Viewed Books"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtSeeAll"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtSeeAll"
+                        style="@style/txtPoppinsregular15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lbl_see_all"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/txtMostPopularBo"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtMostPopularBo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.51"
+                        app:layout_constraintStart_toEndOf="@+id/txtMostPopularBo"
+                        app:layout_constraintTop_toTopOf="@+id/txtMostPopularBo"
+                        tools:text="@string/lbl_see_all" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/horizontalScrollGroup14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/_6pxh"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintGroup8"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:itemCount="3"
+                    tools:listitem="@layout/book_iv" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    app:layout_constraintBottom_toTopOf="@+id/recyclerNewUserHome"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollGroup13">
+
+                    <TextView
+                        android:id="@+id/txtRecommandedBoo"
+                        style="@style/txtPoppinsmedium18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:text="@string/msg_recommanded_boo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtSeeAll1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtSeeAll1"
+                        style="@style/txtPoppinsregular15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_28pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lbl_see_all"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/txtRecommandedBoo"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtRecommandedBoo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.51"
+                        app:layout_constraintStart_toEndOf="@+id/txtRecommandedBoo"
+                        app:layout_constraintTop_toTopOf="@+id/txtRecommandedBoo"
+                        tools:text="@string/lbl_see_all" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerNewUserHome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintGroup8"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintGroup6"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/book_iv_recommanded_book" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/horizontalScrollGroup11"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_13pxh"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toTopOf="@+id/categoryRecyclerView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintGroup2"
+                    tools:itemCount="9"
+                    tools:listitem="@layout/btn_iv_book_category">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoryRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_183pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintGroup4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollGroup11"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:listitem="@layout/book_iv">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/horizontalScrollGroup11"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageImage">
+
+                    <TextView
+                        android:id="@+id/txtSeeAllCategory"
+                        style="@style/txtPoppinsregular15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_28pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_13pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lbl_see_all"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.53"
+                        app:layout_constraintStart_toEndOf="@+id/txtCatagory"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="@string/lbl_see_all" />
+
+                    <TextView
+                        android:id="@+id/txtCatagory"
+                        style="@style/txtPoppinsmedium18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:text="@string/lbl_catagory"
+                        app:layout_constraintEnd_toStartOf="@+id/txtSeeAllCategory"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/txtNewlyAdded"
+                    style="@style/txtPoppinsmedium18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_marginEnd="@dimen/_144pxh"
+                    android:ellipsize="end"
+                    android:gravity="start"
+                    android:singleLine="true"
+                    android:text="@string/lbl_newly_added"
+                    app:layout_constraintBottom_toTopOf="@+id/imageImage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/etSearchAuthor"
+                    tools:text="@string/lbl_newly_added" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imageImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintGroup2"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNewlyAdded">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPagerImageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_160pxh"
+                        android:paddingStart="@dimen/_90pxh"
+                        android:paddingEnd="@dimen/_90pxh"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    app:layout_constraintBottom_toTopOf="@+id/horizontalScrollGroup13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/categoryRecyclerView">
+
+                    <TextView
+                        android:id="@+id/txtMostPopularBo1"
+                        style="@style/txtPoppinsmedium18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:text="@string/msg_most_popular_bo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/txtSeeAllPopularBooks"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtSeeAllPopularBooks"
+                        style="@style/txtPoppinsregular15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_27pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginBottom="@dimen/_3pxv"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/lbl_see_all"
+                        app:layout_constraintBaseline_toBaselineOf="@+id/txtMostPopularBo1"
+                        app:layout_constraintBottom_toBottomOf="@+id/txtMostPopularBo1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.51"
+                        app:layout_constraintStart_toEndOf="@+id/txtMostPopularBo1"
+                        app:layout_constraintTop_toTopOf="@+id/txtMostPopularBo1"
+                        tools:text="@string/lbl_see_all" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/horizontalScrollGroup13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintBottom_toTopOf="@+id/constraintGroup6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintGroup4"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:listitem="@layout/book_iv" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/etSearchAuthor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:background="@drawable/rectangle_bg_white_border_blue_500_radius_8"
+                    app:layout_constraintBottom_toTopOf="@+id/txtNewlyAdded"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/imageArrowback"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_4pxh"
+                        android:background="@color/white"
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    </ImageView>
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/txtSearchAuthor"
+                        android:layout_width="0dp"
+                        style="@style/Widget.AppCompat.SearchView.ActionBar"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_2pxh"
+                        android:queryHint="@string/msg_search_author"
+                        android:singleLine="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintCircleRadius="@dimen/_10pxh"
+                        app:layout_constraintEnd_toStartOf="@+id/imageEllipse10"
+                        app:layout_constraintStart_toEndOf="@id/imageArrowback"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageEllipse10"
+                        android:layout_width="@dimen/_36pxh"
+                        android:layout_height="@dimen/_36pxh"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_launcher_background"
+                        app:civ_border_color="@color/teal_200"
+                        app:civ_border_width="@dimen/_2pxh"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtSearchAuthor"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/horizontalScrollGroup14"
+                    app:layout_constraintTop_toBottomOf="@+id/etSearchAuthor">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/idRVBooks"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:itemCount="1"
+                        tools:listitem="@layout/search_results_item" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="@+id/idRVBooks"
+                        app:layout_constraintTop_toTopOf="@id/idRVBooks" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/listviewKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_48pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:background="@color/white"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@+id/scrollViewScrollview">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:visibility="visible"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/search_results_item" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

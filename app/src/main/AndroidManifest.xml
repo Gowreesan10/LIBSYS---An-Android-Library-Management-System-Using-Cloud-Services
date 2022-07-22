@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.code10.libsys">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LIBSYS"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".CaptureAct"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CodeScanner"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".Admin.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".User.BorrowBook"
+            android:exported="false" />
+        <activity
+            android:name=".send"
+            android:exported="false" />
+
+        <service
+            android:name=".FCMReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- <service android:name=".Admin.MyService" -->
+        <!-- android:permission="android.permission.BIND_JOB_SERVICE"/> -->
+        <!-- <service -->
+        <!-- android:name=".Admin.BarrowRequestListenerService" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission="android.permission.FOREGROUND_SERVICE" /> -->
+        <activity
+            android:name=".User.UserViewDetails"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCJfu9UsL3HZMXi-SOGyd7WZSxIK_pHq3Y" />
+
+        <activity
+            android:name=".User.viewGridBooks"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddBookDetails"
+            android:exported="false" />
+        <activity
+            android:name=".auth.UpdateUserDetails"
+            android:exported="false" />
+        <activity
+            android:name=".auth.UpdateLibrarianDetails"
+            android:exported="false" />
+        <activity
+            android:name=".auth.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.DashBoardAdmin"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".User.DashBoardUser"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan">
+
+            <!-- <meta-data android:name="android.app.default_searchable" -->
+            <!-- android:value=".searchable_Activity" /> -->
+
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".auth.GetStarted"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".auth.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".auth.SignIn"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddBooks"
+            android:exported="false" />
+    </application>
+
+</manifest>
