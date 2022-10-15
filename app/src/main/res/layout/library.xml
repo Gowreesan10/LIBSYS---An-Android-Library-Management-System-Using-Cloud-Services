@@ -19,8 +19,8 @@
 
         <ImageView
             android:id="@+id/imageListprefix"
-            android:layout_width="@dimen/_24pxh"
-            android:layout_height="@dimen/_43pxh"
+            android:layout_width="@dimen/_34pxh"
+            android:layout_height="@dimen/_58pxh"
             android:layout_marginStart="@dimen/_16pxh"
             android:layout_marginTop="@dimen/_22pxv"
             android:layout_marginBottom="@dimen/_8pxv"
@@ -62,10 +62,10 @@
                 android:id="@+id/address"
                 style="@style/txtInterregular12"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_28pxh"
                 android:layout_marginTop="@dimen/_4pxv"
                 android:ellipsize="end"
-                android:singleLine="true"
+                android:singleLine="false"
                 android:text="No 106/1, Sivan kovil Road, Thonikkal Vavuniya" />
         </LinearLayout>
     </LinearLayout>

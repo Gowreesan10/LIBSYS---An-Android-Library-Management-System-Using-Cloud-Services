@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearReturnBookPag"
+        style="@style/groupStylegray_100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5CB3FF"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintGroup26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginEnd="@dimen/_20pxh">
+
+                <ImageView
+                    android:id="@+id/imageGroup2"
+                    android:layout_width="@dimen/_30pxh"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_marginEnd="@dimen/_298pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.03"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtAddBooks"
+                    style="@style/txtPoppinsmedium18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Return Book"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/linearColumnlabelvalue"
+            style="@style/groupStylewhite_A700cornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_22pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:elevation="@dimen/_5pxh"
+            app:cardCornerRadius="@dimen/_10pxh">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLabelvalue"
+                    style="@style/txtPoppinssemibold14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Borrow Details" />
+
+                <LinearLayout
+                    android:id="@+id/linearRowborrower"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBorrower"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="Borrower" />
+
+                    <TextView
+                        android:id="@+id/txtBorrowername"
+                        style="@style/txtPoppinslight13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="Jinu" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowborrowedbook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBorrowedBook"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="Borrowed Book" />
+
+                    <TextView
+                        android:id="@+id/txtBorrowerBook"
+                        style="@style/txtPoppinslight13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="false"
+                        android:text="Group Discussion" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowrequestedtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/viewRequestedTime"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="Requested Date" />
+
+                    <TextView
+                        android:id="@+id/txtRequestedTime"
+                        style="@style/txtPoppinslight13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="false"
+                        android:text="10.10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowlibrary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtLibrary"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="Libraray" />
+
+                    <TextView
+                        android:id="@+id/txtlibName"
+                        style="@style/txtPoppinslight13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="lib06" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowborrowedmethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBorrowedMethod"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="Borrowed Method" />
+
+                    <TextView
+                        android:id="@+id/txtBorrowMethod"
+                        style="@style/txtPoppinslight13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="By hand" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowborroweddays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_8pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:layout_marginBottom="@dimen/_10pxv"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtBorrowedDays"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="Borrowed Days" />
+
+                    <TextView
+                        android:id="@+id/txtBorrowDays"
+                        style="@style/txtPoppinslight13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="10" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/linearColumnlabelvalueOne"
+            style="@style/groupStylewhite_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:elevation="@dimen/_5pxh"
+            android:gravity="start"
+            app:cardCornerRadius="@dimen/_10pxh">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/_10pxh"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLabelvalueOne"
+                    style="@style/txtPoppinssemibold14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/msg_transection_det"
+                    tools:text="@string/msg_transection_det" />
+
+                <LinearLayout
+                    android:id="@+id/linearRowreturneddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtReturnedDate"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="Returned Date" />
+
+                    <TextView
+                        android:id="@+id/tdetailtxtreturndate"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="false"
+                        android:text="20212.233.22" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowoverduedays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtOverDueDays"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="Over Due (Days)" />
+
+                    <TextView
+                        android:id="@+id/tdetailsoverdue"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="5" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowtimezone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_2pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtTimeZone"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:letterSpacing="0.01"
+                        android:singleLine="true"
+                        android:text="Penalty Cost" />
+
+                    <TextView
+                        android:id="@+id/tdetailspenaltycost"
+                        style="@style/txtPoppinsregular13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginBottom="@dimen/_4pxv"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="0 LKR" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtLanguage"
+                    style="@style/txtPoppinsregular14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Penalty Payment Status" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/PaymentStatus"
+                    style="@style/dropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_marginEnd="@dimen/_9pxh"
+                    android:layout_marginBottom="@dimen/_10pxh"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Penalty Payment Status"
+                    android:textColor="@color/black"
+                    app:hintTextAppearance="@style/etSolidRoundedOutline_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/TVcategory">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/PenaltyPayment"
+                        style="@style/etSolidRoundedOutline_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="none"
+                        android:textColorHint="#78909C" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/linearRowcancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginBottom="@dimen/_138pxv"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCancel"
+                style="@style/btnSolidRounded"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_48pxh"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/lbl_cancel"
+                android:textAllCaps="false"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="@string/lbl_cancel" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnAddReturnedBookOne"
+                style="@style/btnSolidRounded"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_48pxh"
+                android:layout_marginStart="@dimen/_6pxh"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_weight="0.5"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/msg_add_returned_bo"
+                android:textAllCaps="false"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:text="@string/msg_add_returned_bo" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

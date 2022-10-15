@@ -5,7 +5,6 @@
 
     <LinearLayout
         android:id="@+id/linearUserHome"
-        style="@style/groupStylewhite_A700"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
@@ -15,17 +14,14 @@
             android:id="@+id/linearFrame33567"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/_10pxh"
-            android:layout_marginTop="@dimen/_21pxv"
-            android:layout_marginEnd="@dimen/_10pxh"
-            android:layout_marginBottom="@dimen/_20pxv"
             android:gravity="start"
             android:orientation="vertical">
 
-            <androidx.appcompat.widget.Toolbar
+            <com.google.android.material.appbar.MaterialToolbar
                 android:id="@+id/toolbarToolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15pxh"
                 app:contentInsetStart="0dp">
 
                 <LinearLayout
@@ -38,6 +34,8 @@
                         android:id="@+id/linearHEADER"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12pxh"
+                        android:layout_marginEnd="@dimen/_10pxh"
                         android:layout_weight="0.8"
                         android:gravity="start"
                         android:orientation="vertical">
@@ -45,9 +43,11 @@
                         <TextView
                             android:id="@+id/txtWelcomeBack"
                             style="@style/txtPoppinsbold22"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ellipsize="end"
+                            android:drawablePadding="@dimen/_8pxh"
+                            android:drawableEnd="@drawable/pngwing_36"
                             android:singleLine="true"
                             android:text="@string/lbl_welcome_back"
                             tools:text="@string/lbl_welcome_back" />
@@ -66,20 +66,27 @@
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/imageUnsplashAvatar"
-                        android:layout_width="@dimen/_58pxh"
-                        android:layout_height="@dimen/_58pxh"
+                        android:layout_width="@dimen/_59pxh"
+                        app:civ_border_width="@dimen/_3pxh"
+                        app:civ_border_color="@color/white"
+                        android:elevation="@dimen/_8pxh"
+                        android:layout_height="@dimen/_59pxh"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="@dimen/_36pxh"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/canstockphoto8237186" />
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:src="@drawable/img_prolile"
+                        tools:ignore="ContentDescription" />
                 </LinearLayout>
-            </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.MaterialToolbar>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerAdminHome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_110pxv"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_65pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:overScrollMode="never"
                 app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
                 app:spanCount="2"
                 tools:itemCount="6"

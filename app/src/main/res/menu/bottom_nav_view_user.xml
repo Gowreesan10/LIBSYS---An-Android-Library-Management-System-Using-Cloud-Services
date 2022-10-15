@@ -10,7 +10,13 @@
         android:id="@+id/BorrowBooksUser"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_menu_book_24"
-        android:title="@string/borrowed" />
+        android:title="Books" />
+
+<!--    <item-->
+<!--        android:id="@+id/DigitalBooks"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_baseline_menu_book_24"-->
+<!--        android:title="Digital Books" />-->
 
     <item
         android:id="@+id/settings"

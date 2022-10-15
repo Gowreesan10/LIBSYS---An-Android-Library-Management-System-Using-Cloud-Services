@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/groupStylegray_100"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Activity.QRCodeGenerator">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#5CB3FF"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup26"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginEnd="@dimen/_20pxh">
+
+            <ImageView
+                android:id="@+id/imageGroup2"
+                android:layout_width="@dimen/_30pxh"
+                android:layout_height="@dimen/_30pxh"
+                android:layout_marginEnd="@dimen/_298pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtAddBooks"
+                style="@style/txtPoppinsmedium18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="QR Code Generater"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardCopy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20pxh"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10pxh"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarQR">
+
+        <TextView
+            android:id="@+id/bookname"
+            style="@style/txtPoppinsregular13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_10pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_weight="0.56"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_5pxh"
+            android:singleLine="false"
+            android:text="Book " />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/selectBook"
+            style="@style/dropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_30pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:fontFamily="@font/poppins"
+            android:hint="Select Book"
+            android:textColor="@color/black"
+            app:hintTextAppearance="@style/etSolidRoundedOutline_1">
+
+            <AutoCompleteTextView
+                android:id="@+id/selectCBookauto"
+                style="@style/etSolidRoundedOutline_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:paddingStart="@dimen/_20pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:paddingBottom="@dimen/_10pxv"
+                android:textColorHint="#78909C" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/copyNumber"
+            style="@style/txtPoppinsregular13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_90pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_weight="0.56"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_5pxh"
+            android:singleLine="false"
+            android:text="Copy Number " />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/selectCopyView"
+            style="@style/dropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_110pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:fontFamily="@font/poppins"
+            android:hint="Select Copy No"
+            android:textColor="@color/black"
+            app:hintTextAppearance="@style/etSolidRoundedOutline_1">
+
+            <AutoCompleteTextView
+                android:id="@+id/selectCopy"
+                style="@style/etSolidRoundedOutline_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="none"
+                android:paddingStart="@dimen/_20pxh"
+                android:paddingTop="@dimen/_10pxv"
+                android:paddingBottom="@dimen/_10pxv"
+                android:textColorHint="#78909C" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/generateButton"
+            style="@style/btnSolidRounded"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_170pxh"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginBottom="@dimen/_10pxh"
+            android:text="Generate QR Code"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_18sp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/qrCode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_20pxh"
+        android:layout_marginTop="@dimen/_30pxh"
+        android:layout_marginEnd="@dimen/_20pxh"
+        android:layout_marginBottom="@dimen/_30pxh"
+        android:background="@drawable/rectangle_border_blue_a400_radius_10"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/printButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardCopy">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/qr"
+            android:layout_width="@dimen/_280pxh"
+            android:layout_height="@dimen/_280pxh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.appcompat.widget.AppCompatImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/printButton"
+        style="@style/btnSolidRounded"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50pxh"
+        android:layout_margin="@dimen/_40pxh"
+        android:layout_marginStart="@dimen/_60pxh"
+        android:layout_marginEnd="@dimen/_60pxh"
+        android:layout_marginBottom="@dimen/_50pxh"
+        android:text="@string/print"
+        android:textSize="@dimen/_18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/blue_500"
+        android:background="#5CB3FF"
         android:minHeight="?attr/actionBarSize"
         app:titleTextColor="@android:color/white" />
 
@@ -26,19 +26,24 @@
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="600dp"
-            tools:context=".auth.MapsActivity" />
+            tools:context=".General.auth.MapsActivity" />
 
         <Button
             android:id="@+id/setLocation"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:backgroundTint="#5CB3FF"
             android:text="Set Location" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_130pxh"
-            android:fontFamily="@string/common_google_play_services_enable_text" />
+            android:layout_height="@dimen/_100pxh"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@string/common_google_play_services_enable_text"
+            android:text="@string/msg_search_author" />
 
     </LinearLayout>
 

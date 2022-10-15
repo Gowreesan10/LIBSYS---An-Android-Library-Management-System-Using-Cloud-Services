@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/linearGroup"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5pxv"
+        android:layout_marginTop="@dimen/_5pxh"
+        android:layout_marginEnd="@dimen/_5pxv"
+        android:layout_marginBottom="@dimen/_3pxh"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:id="@+id/linearGroup7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bookCoverIv"
+                android:layout_width="@dimen/_56pxh"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_launcher_background"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:id="@+id/linearGroup6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_8pxv"
+                android:layout_marginTop="@dimen/_2pxh"
+                android:layout_marginBottom="@dimen/_7pxh"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Book_Name"
+                    style="@style/txtPoppinsmedium16"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_36pxh"
+                    android:ellipsize="end"
+                    android:singleLine="false"
+                    android:text="Gowreeshan Sachchithananthan" />
+
+                <LinearLayout
+                    android:id="@+id/linearRowunlimitedannuaOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtUnlimitedannuaOne"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="Requested  To     :" />
+
+                    <TextView
+                        android:id="@+id/requester"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="false"
+                        android:text="jinushan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/requestStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="Request  Status  :" />
+
+                    <TextView
+                        android:id="@+id/statusName"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="false"
+                        android:text="Time Out" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

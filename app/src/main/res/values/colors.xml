@@ -17,7 +17,7 @@
     <color name="gray_900">#1a1c30</color>
     <color name="blue_A700_66">#66005eff</color>
     <color name="white_A700">#ffffff</color>
-    <color name="ic_launcher_background">#191D30</color>
+
     <color name="gray_901">#26262b</color>
     <color name="teal_900">#002154</color>
     <color name="gray_300">#dedee3</color>
@@ -30,4 +30,7 @@
     <color name="light_blue_A200">#FF40C4FF</color>
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
+
+
+    <color name="material">#FBB8AC</color>
 </resources>

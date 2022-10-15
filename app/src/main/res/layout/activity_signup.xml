@@ -46,8 +46,8 @@
                     android:id="@+id/imageBack"
                     android:layout_width="@dimen/_30pxh"
                     android:layout_height="@dimen/_30pxh"
-                    android:src="@drawable/img_group2"
                     android:layout_marginStart="@dimen/_10pxh"
+                    android:src="@drawable/img_group2"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/txtSignUp"
                     app:layout_constraintHorizontal_bias="0.07"
@@ -116,7 +116,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_17pxh"
-            android:layout_marginTop="@dimen/_30pxv"
             android:layout_marginEnd="@dimen/_17pxh"
             android:background="@drawable/rectangle_bg_black_900_border_gray_900_radius_16"
             android:ellipsize="end"
@@ -127,6 +126,7 @@
             android:paddingBottom="@dimen/_22pxv"
             android:singleLine="true"
             android:textColorHint="@color/bluegray_401"
+            app:layout_constraintBottom_toTopOf="@id/etConformYourPass"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etEnterYourMail" />
@@ -137,7 +137,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_17pxh"
-            android:layout_marginTop="@dimen/_30pxv"
+
             android:layout_marginEnd="@dimen/_17pxh"
             android:background="@drawable/rectangle_bg_black_900_border_gray_900_radius_16"
             android:ellipsize="end"
@@ -148,6 +148,7 @@
             android:paddingBottom="@dimen/_22pxv"
             android:singleLine="true"
             android:textColorHint="@color/bluegray_401"
+            app:layout_constraintBottom_toTopOf="@+id/roleSelect"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etEnterYourPass" />
@@ -158,12 +159,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_17pxh"
-            android:layout_marginTop="@dimen/_28pxv"
             android:layout_marginEnd="@dimen/_17pxh"
             android:fontFamily="@font/poppins"
             android:hint="@string/select_role"
             android:textColor="@color/black"
             app:hintTextAppearance="@style/etSolidRoundedOutline_1"
+            app:layout_constraintBottom_toTopOf="@+id/etenterLibraryId"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/etConformYourPass">
@@ -181,23 +182,44 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etenterLibraryId"
+            style="@style/etSolidRoundedOutline_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginEnd="@dimen/_17pxh"
+            android:background="@drawable/rectangle_bg_black_900_border_gray_900_radius_16"
+            android:ellipsize="end"
+            android:hint="Enter Librarian ID"
+            android:inputType="text"
+            android:paddingStart="@dimen/_20pxh"
+            android:paddingTop="@dimen/_22pxv"
+            android:paddingBottom="@dimen/_22pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/bluegray_401"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roleSelect" />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSignUp"
             style="@style/btnSolidRounded"
             android:layout_width="0dp"
-            android:layout_height="@dimen/_48pxv"
+            android:layout_height="@dimen/_50pxv"
             android:layout_marginStart="@dimen/_17pxh"
-            android:layout_marginTop="@dimen/_60pxv"
             android:layout_marginEnd="@dimen/_17pxh"
             android:ellipsize="end"
             android:gravity="center"
             android:singleLine="true"
             android:text="@string/lbl_sign_up"
             android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/txtHaveAnAccount"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/roleSelect"
+            app:layout_constraintTop_toBottomOf="@+id/etenterLibraryId"
             tools:text="@string/lbl_sign_up" />
 
         <TextView

@@ -1,85 +1,283 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="@dimen/_4pxh"
-    app:cardCornerRadius="8dp"
-    app:cardElevation="8dp">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <RelativeLayout
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/linearGroup"
+        style="@style/groupStylewhite_A700"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2pxh"
+        android:layout_marginTop="@dimen/_5pxh"
+        android:layout_marginEnd="@dimen/_2pxh"
+        android:layout_marginBottom="@dimen/_3pxh"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:cardPreventCornerOverlap="true">
 
-        <ImageView
-            android:id="@+id/idIVbook"
-            android:layout_width="@dimen/_102pxh"
-            android:layout_height="@dimen/_145pxh"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:contentDescription="@string/bookcover" />
-
-        <TextView
-            android:id="@+id/idTVBookTitle"
+        <LinearLayout
+            android:id="@+id/linearGroup7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/idIVbook"
-            android:padding="3dp"
-            android:text="@string/book_title"
-            android:textColor="@color/black"
-            android:textSize="11sp" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/idTVSubtitleRv"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/idTVBookTitle"
-            android:layout_marginTop="3dp"
-            android:layout_toEndOf="@id/idIVbook"
-            android:padding="3dp"
-            android:text="@string/subtitle"
-            android:textColor="@color/black"
-            android:textSize="11sp" />
+            <ImageView
+                android:id="@+id/idIVbook"
+                android:layout_width="@dimen/_70pxh"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_launcher_background"
+                tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/idTVAuthor"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/idTVSubtitleRv"
-            android:layout_marginTop="3dp"
-            android:layout_toEndOf="@id/idIVbook"
-            android:padding="3dp"
-            android:text="@string/author"
-            android:textColor="@color/black"
-            android:textSize="11sp" />
+            <LinearLayout
+                android:id="@+id/linearGroup6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10pxv"
+                android:layout_marginTop="@dimen/_3pxh"
+                android:layout_marginEnd="@dimen/_5pxh"
+                android:layout_marginBottom="@dimen/_5pxh"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/idTVISBN10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/idTVAuthor"
-            android:layout_marginTop="3dp"
-            android:layout_toEndOf="@id/idIVbook"
-            android:padding="3dp"
-            android:text="@string/lbl_isbn_10"
-            android:textColor="@color/black"
-            android:textSize="11sp" />
 
-        <TextView
-            android:id="@+id/idTVISBN13"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/idTVISBN10"
-            android:layout_marginTop="3dp"
-            android:layout_toEndOf="@id/idIVbook"
-            android:padding="3dp"
-            android:text="@string/lbl_isbn_13"
-            android:textColor="@color/black"
-            android:textSize="11sp" />
+                <LinearLayout
+                    android:id="@+id/bookName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3pxh"
+                    android:layout_marginBottom="@dimen/_2pxh"
+                    android:orientation="horizontal">
 
-    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/txtBookname"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="Title          :" />
 
-</com.google.android.material.card.MaterialCardView>
+                    <TextView
+                        android:id="@+id/idTVBookTitle"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="false"
+                        android:text="jinushan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRolimitedannuaOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtUnlimiteuaOne"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="Subtitle    :" />
+
+                    <TextView
+                        android:id="@+id/idTVSubtitleRv"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="false"
+                        android:text="jinushan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearRowunlimitedannuaOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtUnlimitedannuaOne"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="Authors    :" />
+
+                    <TextView
+                        android:id="@+id/idTVAuthor"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="false"
+                        android:text="jinushan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ISBN10ISBN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ISBN10"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="ISBN-10    :" />
+
+                    <TextView
+                        android:id="@+id/idTVISBN10"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="false"
+                        android:text="jinushan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/requestStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3pxh"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/status"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="ISBN-13    :" />
+
+                    <TextView
+                        android:id="@+id/idTVISBN13"
+                        style="@style/txtInterregular12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_5pxh"
+                        android:singleLine="false"
+                        android:text="Time Out" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</layout><!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:layout_margin="@dimen/_4pxh"-->
+    <!--    app:cardCornerRadius="8dp"-->
+    <!--    app:cardElevation="8dp">-->
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/idIVbook"-->
+    <!--            android:layout_width="@dimen/_90pxh"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginEnd="10dp"-->
+    <!--            android:contentDescription="@string/bookcover" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/idTVBookTitle"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:layout_toEndOf="@id/idIVbook"-->
+    <!--            android:padding="3dp"-->
+    <!--            android:text="@string/book_title"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="11sp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/idTVSubtitleRv"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/idTVBookTitle"-->
+    <!--            android:layout_marginTop="3dp"-->
+    <!--            android:layout_toEndOf="@id/idIVbook"-->
+    <!--            android:padding="3dp"-->
+    <!--            android:text="@string/subtitle"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="11sp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/idTVAuthor"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/idTVSubtitleRv"-->
+    <!--            android:layout_marginTop="3dp"-->
+    <!--            android:layout_toEndOf="@id/idIVbook"-->
+    <!--            android:padding="3dp"-->
+    <!--            android:text="@string/author"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="11sp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/idTVISBN10"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/idTVAuthor"-->
+    <!--            android:layout_marginTop="3dp"-->
+    <!--            android:layout_toEndOf="@id/idIVbook"-->
+    <!--            android:padding="3dp"-->
+    <!--            android:text="@string/lbl_isbn_10"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="11sp" />-->
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/wrap_content"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/idTVISBN10"-->
+    <!--            android:layout_marginTop="3dp"-->
+    <!--            android:layout_marginBottom="@dimen/_10pxh"-->
+    <!--            android:layout_toEndOf="@id/idIVbook"-->
+    <!--            android:padding="3dp"-->
+    <!--            android:text="@string/lbl_isbn_13"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            android:textSize="11sp" />-->
+
+    <!--    </RelativeLayout>-->
+
+    <!--</com.google.android.material.card.MaterialCardView>-->

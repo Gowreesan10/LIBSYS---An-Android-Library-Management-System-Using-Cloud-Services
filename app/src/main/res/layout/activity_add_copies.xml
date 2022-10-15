@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/frameLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_A700">
+
+        <LinearLayout
+            android:id="@+id/linearColumnarrowleft"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top|start"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5CB3FF"
+                app:contentInsetStart="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintGroup26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_12pxh"
+                    android:layout_marginEnd="@dimen/_20pxh">
+
+                    <ImageView
+                        android:id="@+id/imageGroup2"
+                        android:layout_width="@dimen/_30pxh"
+                        android:layout_height="@dimen/_30pxh"
+                        android:layout_marginEnd="@dimen/_298pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_group2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.03"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtAddBooks"
+                        style="@style/txtPoppinsmedium18"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5pxv"
+                        android:layout_marginBottom="@dimen/_5pxv"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="Add Copies"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/linearRowrectangletwentyeight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_27pxv"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/bookcover"
+                    android:layout_width="@dimen/_110pxh"
+                    android:layout_height="@dimen/_146pxh"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/canstockphoto8237186" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/bookname"
+                        style="@style/txtPoppinsmedium18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginStart="@dimen/_5pxh"
+                        android:text="Most Importannt Comic Book ON earth" />
+
+                    <LinearLayout
+                        android:id="@+id/Authers"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_marginEnd="@dimen/_9pxh"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtAuthor"
+                            style="@style/txtPoppinsmedium14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:letterSpacing="0.01"
+                            android:text="Author" />
+
+                        <TextView
+                            android:id="@+id/viewAuthor"
+                            style="@style/txtPoppinslight13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="false"
+                            android:text="abcdefghi jklamioa ninin" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/Publisher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_marginEnd="@dimen/_9pxh"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtPublisher"
+                            style="@style/txtPoppinsmedium14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:letterSpacing="0.01"
+                            android:text="Publisher" />
+
+                        <TextView
+                            android:id="@+id/viewPublisher"
+                            style="@style/txtPoppinslight13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="false"
+                            android:text="jinushan publications" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/linearColumncancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_35pxv"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:background="@color/white"
+                android:elevation="@dimen/_10pxh"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                app:cardCornerRadius="@dimen/_10pxh"
+                app:cardMaxElevation="@dimen/_15pxh">
+
+                <LinearLayout
+                    android:id="@+id/linearColumnlabelvalueOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtLabelvalueOne"
+                        style="@style/txtPoppinssemibold14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_19pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Copy Details" />
+
+                    <LinearLayout
+                        android:id="@+id/linearRowlibrary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_marginEnd="@dimen/_9pxh"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtLibrary"
+                            style="@style/txtPoppinsregular13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_weight="0.5"
+                            android:ellipsize="end"
+                            android:letterSpacing="0.01"
+                            android:singleLine="true"
+                            android:text="Library" />
+
+                        <TextView
+                            android:id="@+id/txtlibname"
+                            style="@style/txtPoppinslight13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_2pxv"
+                            android:layout_weight="0.5"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="lib06" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearRowinitialamount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_7pxv"
+                        android:layout_marginEnd="@dimen/_9pxh"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtInitialAmount"
+                            style="@style/txtPoppinsregular13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:letterSpacing="0.01"
+                            android:text="Initial Total Copies" />
+
+                        <TextView
+                            android:id="@+id/txtlibinitcopies"
+                            style="@style/txtPoppinslight13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_4pxv"
+                            android:layout_weight="0.5"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="10" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txtLanguage"
+                        style="@style/txtPoppinsregular14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_14pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="Enter No of Copies" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/etEnterNoOfCopies"
+                        style="@style/dropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_4pxv"
+                        android:layout_marginEnd="@dimen/_9pxh"
+                        android:fontFamily="@font/poppins"
+                        android:hint="Enter No of Copies"
+                        android:textColor="@color/black"
+                        app:hintTextAppearance="@style/etSolidRoundedOutline_1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/TVcategory">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/EnterNoOfCopies"
+                            style="@style/etSolidRoundedOutline_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="none"
+                            android:textColorHint="#78909C" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearRowtotalcopies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_9pxh"
+                        android:layout_marginTop="@dimen/_12pxv"
+                        android:layout_marginEnd="@dimen/_9pxh"
+                        android:layout_marginBottom="@dimen/_15pxv"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtTotalCopies"
+                            style="@style/txtPoppinsregular13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:ellipsize="end"
+                            android:letterSpacing="0.01"
+                            android:singleLine="true"
+                            android:text="Total Copies"
+                            tools:text="@string/lbl_total_copies" />
+
+                        <TextView
+                            android:id="@+id/txtfinalcopies"
+                            style="@style/txtPoppinslight13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:ellipsize="end"
+                            android:gravity="right"
+                            android:lineSpacingExtra="@dimen/_1pxh"
+                            android:singleLine="true"
+                            android:text="-" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:id="@+id/linearRowcancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15pxh"
+                android:layout_marginTop="@dimen/_45pxv"
+                android:layout_marginEnd="@dimen/_15pxh"
+                android:layout_marginBottom="@dimen/_5pxv"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCancel"
+                    style="@style/btnSolidRounded"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48pxh"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_12pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingBottom="@dimen/_12pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_cancel"
+                    android:textAllCaps="false"
+                    tools:text="@string/lbl_cancel" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnAddCopiesOne"
+                    style="@style/btnSolidRounded"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_48pxh"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_marginEnd="@dimen/_1pxh"
+                    android:layout_weight="0.5"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_20pxh"
+                    android:paddingTop="@dimen/_12pxv"
+                    android:paddingEnd="@dimen/_20pxh"
+                    android:paddingBottom="@dimen/_12pxv"
+                    android:singleLine="true"
+                    android:text="Add Copies"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

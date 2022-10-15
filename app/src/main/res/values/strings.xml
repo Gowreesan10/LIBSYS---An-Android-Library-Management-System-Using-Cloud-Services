@@ -6,6 +6,11 @@
     </string-array>
 
     <string name="app_name">LIB SYS</string>
+    <string name="lbl_antonio_renders">Antonio Renders</string>
+    <string name="lbl_logout">Logout</string>
+    <string name="msg_view_all_librar">View All Libraries</string>
+    <string name="lbl_my_profile">My Profile</string>
+    <string name="lbl_forget_password">Forget Password</string>
     <string name="loading">Loading…</string>
     <string name="no_internet_connection">No internet connection!</string>
     <string name="lbl_update_details">Update Details</string>
@@ -209,7 +214,7 @@
 
     <string name="lbl_5_day_after">5 day after</string>
 
-    <string name="msg_transection_fee">Transection Fees will be refunded if Barrow request is not accepted for any reasons.\nUser can contact library for any queries regarding barrow request\n
+    <string name="msg_transection_fee">Transaction Fees will be refunded if Barrow request is not accepted for any reasons.\nWhen returning the Book Transaction fees will be returned after reducing the penalty and post fees.\nUser can contact library for any queries regarding barrow request\n
 User will be charged Rs 10 per day, if user hold book after the returning day. </string>
 
     <string name="lbl_book_details">Book Details</string>
@@ -221,7 +226,21 @@ User will be charged Rs 10 per day, if user hold book after the returning day. <
     <string name="lbl_borrow_date">Borrow Date</string>
 
     <string name="lbl_cancel">Cancel</string>
-
+    <string name="lbl_issued">Issued</string>
+    <string name="lbl_issued_copies">Issued Copies</string>
+    <string name="msg_available_copie">Available Copies</string>
+    <string name="lbl_reserved_copies">Reserved Copies</string>
+    <string name="msg_issued_copies_d">Issued Copies Details</string>
+    <string name="lbl_issued_to">Issued To</string>
+    <string name="lbl_10">10</string>
+    <string name="lbl_copy_1">Copy 1</string>
+    <string name="lbl_03">03</string>
+    <string name="lbl_1201212">1201212</string>
+    <string name="lbl_04">04</string>
+    <string name="lbl_issued_time">Issued Time</string>
+    <string name="lbl_status">Status</string>
+    <string name="lbl_total_copies">Total Copies</string>
+    <string name="lbl_user06">User06</string>
     <string name="msg_send_barrow_req">Send Barrow Request</string>
     <string name="title_activity_main">MainActivity</string>
     <!-- Strings used for fragments for navigation -->
@@ -252,4 +271,6 @@ User will be charged Rs 10 per day, if user hold book after the returning day. <
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="print">Print</string>
+    <string name="title_activity_audio_player">AudioPlayerActivity</string>
 </resources>

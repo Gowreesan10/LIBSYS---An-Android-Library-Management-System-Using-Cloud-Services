@@ -34,18 +34,17 @@
                     android:layout_height="@dimen/_156pxh"
                     android:layout_marginStart="@dimen/_108pxh"
                     android:layout_marginEnd="@dimen/_110pxh"
-                    android:text="@string/category"
                     android:src="@drawable/click_to_upload"
+                    android:text="@string/category"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                     />
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnAddBook"
                     style="@style/btnSolidRounded"
                     android:layout_width="0dp"
-                    android:layout_height="@dimen/_40pxv"
+                    android:layout_height="@dimen/_48pxv"
                     android:layout_marginStart="@dimen/_65pxh"
                     android:layout_marginTop="@dimen/_12pxv"
                     android:layout_marginEnd="@dimen/_65pxh"
@@ -278,9 +277,9 @@
                             android:layout_marginEnd="@dimen/_9pxh"
                             android:ellipsize="end"
                             android:gravity="start"
-                            android:visibility="gone"
                             android:singleLine="true"
                             android:text="@string/lbl_keywords"
+                            android:visibility="gone"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/ETcategory"
@@ -296,13 +295,13 @@
                             android:layout_marginEnd="@dimen/_9pxh"
                             android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
                             android:ellipsize="end"
-                            android:visibility="gone"
                             android:hint="@string/lbl_enter_keywords"
                             android:paddingStart="@dimen/_16pxh"
                             android:paddingTop="@dimen/_13pxv"
                             android:paddingBottom="@dimen/_13pxv"
                             android:singleLine="false"
                             android:textColorHint="@color/bluegray_400"
+                            android:visibility="gone"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/txtKeywords" />
@@ -396,31 +395,30 @@
                             android:text="@string/category"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/ETpublishDate"
-                             />
+                            app:layout_constraintTop_toBottomOf="@+id/ETpublishDate" />
 
-<!--                        <EditText-->
-<!--                            android:id="@+id/ETcategory"-->
-<!--                            style="@style/etSolidRoundedOutline_2"-->
-<!--                            android:layout_width="0dp"-->
-<!--                            android:layout_height="wrap_content"-->
-<!--                            android:layout_marginStart="@dimen/_9pxh"-->
-<!--                            android:layout_marginTop="@dimen/_4pxv"-->
-<!--                            android:layout_marginEnd="@dimen/_9pxh"-->
-<!--                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"-->
-<!--                            android:drawableEnd="@drawable/img_icon"-->
-<!--                            android:drawablePadding="@dimen/_10pxh"-->
-<!--                            android:ellipsize="end"-->
-<!--                            android:hint="Select Catagory"-->
-<!--                            android:paddingStart="@dimen/_16pxh"-->
-<!--                            android:paddingTop="@dimen/_13pxv"-->
-<!--                            android:paddingEnd="@dimen/_8pxh"-->
-<!--                            android:paddingBottom="@dimen/_13pxv"-->
-<!--                            android:singleLine="true"-->
-<!--                            android:textColorHint="@color/bluegray_400"-->
-<!--                            app:layout_constraintEnd_toEndOf="parent"-->
-<!--                            app:layout_constraintStart_toStartOf="parent"-->
-<!--                            app:layout_constraintTop_toBottomOf="@+id/TVcategory" />-->
+                        <!--                        <EditText-->
+                        <!--                            android:id="@+id/ETcategory"-->
+                        <!--                            style="@style/etSolidRoundedOutline_2"-->
+                        <!--                            android:layout_width="0dp"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_marginStart="@dimen/_9pxh"-->
+                        <!--                            android:layout_marginTop="@dimen/_4pxv"-->
+                        <!--                            android:layout_marginEnd="@dimen/_9pxh"-->
+                        <!--                            android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"-->
+                        <!--                            android:drawableEnd="@drawable/img_icon"-->
+                        <!--                            android:drawablePadding="@dimen/_10pxh"-->
+                        <!--                            android:ellipsize="end"-->
+                        <!--                            android:hint="Select Catagory"-->
+                        <!--                            android:paddingStart="@dimen/_16pxh"-->
+                        <!--                            android:paddingTop="@dimen/_13pxv"-->
+                        <!--                            android:paddingEnd="@dimen/_8pxh"-->
+                        <!--                            android:paddingBottom="@dimen/_13pxv"-->
+                        <!--                            android:singleLine="true"-->
+                        <!--                            android:textColorHint="@color/bluegray_400"-->
+                        <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                            app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                            app:layout_constraintTop_toBottomOf="@+id/TVcategory" />-->
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:id="@+id/ETcategory"
@@ -438,13 +436,13 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/TVcategory">
 
-                        <AutoCompleteTextView
-                            android:id="@+id/selectCatagory"
-                            style="@style/etSolidRoundedOutline_1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:inputType="none"
-                            android:textColorHint="#78909C" />
+                            <AutoCompleteTextView
+                                android:id="@+id/selectCatagory"
+                                style="@style/etSolidRoundedOutline_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="none"
+                                android:textColorHint="#78909C" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -476,10 +474,10 @@
                                 android:layout_width="@dimen/_146pxh"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/_4pxv"
+                                android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
                                 android:hint="Enter No of Pages"
                                 android:paddingStart="@dimen/_16pxh"
                                 android:paddingTop="@dimen/_9pxv"
-                                android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
                                 android:paddingBottom="@dimen/_9pxv"
                                 android:textColorHint="@color/bluegray_400"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -507,11 +505,11 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/_18pxh"
                                 android:layout_marginTop="@dimen/_4pxv"
+                                android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
                                 android:hint="Enter Rating"
                                 android:paddingStart="@dimen/_16pxh"
                                 android:paddingTop="@dimen/_9pxv"
                                 android:paddingBottom="@dimen/_9pxv"
-                                android:background="@drawable/rectangle_bg_white_a700_border_gray_300_radius_4"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toEndOf="@+id/ETpageCount"
@@ -722,6 +720,7 @@
             android:id="@+id/toolbarToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#5CB3FF"
             app:contentInsetStart="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

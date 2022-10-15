@@ -6,6 +6,10 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -22,35 +26,57 @@
         android:theme="@style/Theme.LIBSYS"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".CaptureAct"
-            android:screenOrientation="fullSensor"
+            android:name=".General.auth.updateLibrarianProfile"
+            android:exported="false" />
+        <activity
+            android:name=".General.auth.UpdateUserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Activity.AddCopies"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Activity.UserDetailsView"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Activity.SelectCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.Activity.PDFViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.Activity.AudioPlayerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_audio_player"
+            android:theme="@style/Theme.LIBSYS.NoActionBar" />
+        <activity
+            android:name=".Admin.Activity.ReturnBooksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Activity.QRCodeGenerator"
+            android:exported="false">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Admin.Activity.CaptureAct"
+            android:screenOrientation="portrait"
             android:stateNotNeeded="true"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".CodeScanner"
+            android:name=".Admin.Activity.CodeScanner"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-
-        <receiver
-            android:name=".Admin.MyReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-
-        <activity
-            android:name=".User.BorrowBook"
-            android:exported="false" />
-        <activity
-            android:name=".send"
+            android:name=".User.Activity.BorrowBook"
             android:exported="false" />
 
         <service
-            android:name=".FCMReceiver"
+            android:name=".General.Service.FCMReceiver"
+            android:directBootAware="true"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
@@ -63,7 +89,7 @@
         <!-- android:exported="true" -->
         <!-- android:permission="android.permission.FOREGROUND_SERVICE" /> -->
         <activity
-            android:name=".User.UserViewDetails"
+            android:name=".General.Activity.ViewDetails"
             android:exported="false" />
 
         <meta-data
@@ -71,22 +97,22 @@
             android:value="AIzaSyCJfu9UsL3HZMXi-SOGyd7WZSxIK_pHq3Y" />
 
         <activity
-            android:name=".User.viewGridBooks"
+            android:name=".General.Activity.viewGridBooks"
             android:exported="false" />
         <activity
-            android:name=".Admin.AddBookDetails"
+            android:name=".Admin.Activity.AddBookDetails"
             android:exported="false" />
         <activity
-            android:name=".auth.UpdateUserDetails"
+            android:name=".General.auth.UpdateUserDetails"
             android:exported="false" />
         <activity
-            android:name=".auth.UpdateLibrarianDetails"
+            android:name=".General.auth.UpdateLibrarianDetails"
             android:exported="false" />
         <activity
-            android:name=".auth.MapsActivity"
+            android:name=".General.auth.MapsActivity"
             android:exported="false" />
         <activity
-            android:name=".Admin.DashBoardAdmin"
+            android:name=".Admin.Activity.DashBoardAdmin"
             android:exported="false"
             android:windowSoftInputMode="adjustPan">
 
@@ -96,7 +122,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".User.DashBoardUser"
+            android:name=".User.Activity.DashBoardUser"
             android:exported="false"
             android:windowSoftInputMode="adjustPan">
 
@@ -112,7 +138,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".auth.GetStarted"
+            android:name=".General.auth.GetStarted"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -121,13 +147,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".auth.SignUp"
+            android:name=".General.auth.SignUp"
             android:exported="false" />
         <activity
-            android:name=".auth.SignIn"
+            android:name=".General.auth.SignIn"
             android:exported="false" />
         <activity
-            android:name=".Admin.AddBooks"
+            android:name=".Admin.Activity.GetBookDetails"
             android:exported="false" />
     </application>
 

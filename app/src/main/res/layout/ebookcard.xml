@@ -1,0 +1,38 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/CVbookCover"
+    android:layout_width="@dimen/_102pxh"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5pxh"
+    android:layout_marginEnd="@dimen/_5pxh"
+    android:layout_marginBottom="@dimen/_5pxh"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/bookCoverImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_145pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/bookName"
+            style="@style/txtInterregular12"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40pxh"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="123456">
+
+        </TextView>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

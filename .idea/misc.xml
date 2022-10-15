@@ -117,6 +117,98 @@
         <entry key="..\:/Users/DELL/Desktop/LIBSYS/LIBSYS/app/src/main/res/menu/bottom_nav_view_user.xml" value="0.22530996152201796" />
         <entry key="..\:/Users/DELL/Desktop/LIBSYS/LIBSYS/app/src/main/res/menu/menu.xml" value="0.22530996152201796" />
         <entry key="..\:/Users/DELL/Desktop/LIBSYS/LIBSYS/app/src/main/res/menu/search_menu.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-anydpi/drawable_img_question.xml" value="0.275" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-anydpi/drawable_img_user.xml" value="0.275" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-anydpi/drawable_img_user_20x14.xml" value="0.275" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-anydpi/img_icon2.xml" value="0.275" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-anydpi/rectangle_bg_cyan_600_63_radius_16.xml" value="0.275" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-anydpi/rectangle_bg_gray_100.xml" value="0.1885" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-anydpi/rectangle_bg_indigo_a200_6c_radius_25.xml" value="0.2575" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-mdpi/img_featherarrowl.xml" value="0.1" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1105" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-v24/rectangle_bg_white_border_blue_500_radius_8.xml" value="0.175" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-xhdpi/img_group2.xml" value="0.2575" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-xhdpi/rectangle_bg_gray_100.xml" value="0.1885" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-xxhdpi/rectangle_bg_blue_a400_radius_16.xml" value="0.2775" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable-xxxhdpi/rectangle_bg_gray_100_radius_24.xml" value="0.1535" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable/dialog_bg.xml" value="0.1355" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable/e_bookcard.xml" value="0.159" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1105" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable/ic_outline_notifications_24.xml" value="0.1105" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable/img_back.xml" value="0.2575" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable/img_ellipse_10.xml" value="0.1105" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable/layout_forget_password.xml" value="0.275" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable/rectangle_bg_blue_a400_radius_16.xml" value="0.2775" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/drawable/rectangle_border_blue_500_radius_17.xml" value="0.1105" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout-land/row_language.xml" value="0.2325684024713151" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_add_book_details.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_add_books.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_add_copies.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_audio_player.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_audio_player2.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_book_details.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_borrow_book.xml" value="0.4" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_getstarted.xml" value="0.176" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_isbn_scanner.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_issue_books.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_main.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_pdfviewer.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_qrcode_generater.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_return_books.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_select_category.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_signin.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_signup.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_update_librarian_profile.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_update_library_details.xml" value="0.176" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_update_user_details.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_update_user_profile.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_user_details_view.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_user_view_details.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/activity_view_books.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/add_copies.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/admin_dashboard_card.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/admin_request_card.xml" value="0.4" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/book_grid_item.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/book_iv.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/book_iv_recommanded_book.xml" value="0.5006934812760055" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/book_rv_item.xml" value="0.536" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/bottom_sheet_layout_issue_book.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/btn_iv_book_category.xml" value="1.0" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/category_item.xml" value="0.4" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/content_audio_player.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/copy_details.xml" value="0.36574074074074076" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/copyitem.xml" value="0.4" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/dialogaddcopies.xml" value="0.22445489525438223" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/ebookcard.xml" value="0.4" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_admin_home.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_admin_issue_books.xml" value="0.22625215889464595" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_admin_issued_book.xml" value="0.176" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_admin_profile.xml" value="0.4" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_admin_request.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_borrowed_book.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_digital_audio_book.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_digital_books.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_user_book.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_user_books.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_user_e_book.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_user_home.xml" value="0.33840304182509506" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/fragment_user_profile.xml" value="0.536" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/frame_layout_admin.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/frame_layout_user.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/issuedadminbookcard.xml" value="0.4" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/layout_forget_password.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/library.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/map_activity.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/profile.xml" value="0.2" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/recipt.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/search_results_item.xml" value="0.536" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/select_category.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/user_borrowed_book_card.xml" value="0.3633217993079585" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/user_borrowed_book_layout.xml" value="0.22445489525438223" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/user_request_card.xml" value="0.4" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/layout/userviewcard.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/menu/bottom_nav_view_admin.xml" value="0.22530996152201796" />
+        <entry key="..\:/Users/DELL/Documents/GitHub/LYBSYS/app/src/main/res/menu/bottom_nav_view_user.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -125,5 +217,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.29019823788546256" />
+      </ProjectState>
+    </option>
   </component>
 </project>

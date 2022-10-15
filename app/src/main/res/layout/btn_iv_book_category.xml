@@ -3,9 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/selecterCard"
     android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginEnd="@dimen/_4pxh"
-    app:cardCornerRadius="@dimen/_17pxv">
+    android:paddingTop="@dimen/_1pxh"
+    android:paddingBottom="@dimen/_1pxh"
+    app:cardCornerRadius="@dimen/_17pxh">
 
     <TextView
         android:id="@+id/btnFiction"
@@ -19,6 +21,8 @@
         android:paddingEnd="@dimen/_10pxh"
         android:paddingBottom="@dimen/_4pxv"
         android:singleLine="true"
+        android:text="jinukutty"
+        android:textAlignment="center"
         android:textAllCaps="false" />
 
 </com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/linearLibrarian"
+        style="@style/groupStylewhite_A700"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5CB3FF"
+            app:contentInsetStart="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintGroup26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_12pxh"
+                android:layout_marginEnd="@dimen/_20pxh">
+
+                <ImageView
+                    android:id="@+id/imageGroup2"
+                    android:layout_width="@dimen/_30pxh"
+                    android:layout_height="@dimen/_30pxh"
+                    android:layout_marginEnd="@dimen/_298pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_group2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.03"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtAddBooks"
+                    style="@style/txtPoppinsmedium18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_marginBottom="@dimen/_5pxv"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Update Profile"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/linearProlile"
+            style="@style/groupStyleblue_A700_66cornerRadius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_20pxh"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageProlile"
+                android:layout_width="@dimen/_134pxh"
+                android:layout_height="@dimen/_134pxh"
+                android:layout_gravity="start"
+                tools:ignore="ContentDescription"
+                tools:src="@drawable/image_not_found" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSelectProfile"
+            style="@style/btnSolidRounded"
+            android:layout_width="@dimen/_127pxh"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_9pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/msg_select_profile"
+            android:textAllCaps="false"
+            tools:text="@string/msg_select_profile" />
+
+        <EditText
+            android:id="@+id/libraryName"
+            style="@style/etSolidRoundedOutline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:allowClickWhenDisabled="true"
+            android:background="@drawable/rectangle_bg_black_900_border_gray_900_radius_16"
+            android:ellipsize="end"
+            android:enabled="false"
+            android:hint="@string/enter_library_name"
+            android:inputType="text"
+            android:paddingStart="@dimen/_20pxh"
+            android:paddingTop="@dimen/_22pxv"
+            android:paddingBottom="@dimen/_22pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/bluegray_400"
+            tools:ignore="Autofill" />
+
+        <LinearLayout
+            android:id="@+id/linearGroup100000079"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_marginEnd="@dimen/_12pxh"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtAddress"
+                style="@style/etSolidRoundedOutline_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.72"
+                android:background="@drawable/rectangle_bg_black_900_border_gray_900_radius_16"
+                android:hint="Location Not Selected"
+                android:paddingStart="@dimen/_14pxh"
+                android:paddingTop="@dimen/_22pxv"
+                android:paddingBottom="@dimen/_22pxv"
+                android:textColorHint="@color/bluegray_400" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnChooseLocation"
+                style="@style/btnSolidRounded"
+                android:layout_width="@dimen/_90pxh"
+                android:layout_height="@dimen/_58pxv"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="Set Location"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etTelephoneNo"
+            style="@style/etSolidRoundedOutline_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:background="@drawable/rectangle_bg_black_900_border_gray_900_radius_16"
+            android:ellipsize="end"
+            android:hint="@string/lbl_telephone_no"
+            android:inputType="text"
+            android:paddingStart="@dimen/_20pxh"
+            android:paddingTop="@dimen/_22pxv"
+            android:paddingBottom="@dimen/_22pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/bluegray_400"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/etFaxNo"
+            style="@style/etSolidRoundedOutline_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17pxh"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:background="@drawable/rectangle_bg_black_900_border_gray_900_radius_16"
+            android:ellipsize="end"
+            android:hint="@string/lbl_fax_no"
+            android:inputType="text"
+            android:paddingStart="@dimen/_20pxh"
+            android:paddingTop="@dimen/_22pxv"
+            android:paddingBottom="@dimen/_22pxv"
+            android:singleLine="true"
+            android:textColorHint="@color/bluegray_400"
+            tools:ignore="Autofill" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpdate"
+            style="@style/btnSolidRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingBottom="@dimen/_16pxv"
+            android:singleLine="true"
+            android:text="@string/lbl_update"
+            android:textAllCaps="false"
+            tools:text="@string/lbl_update" />
+    </LinearLayout>
+</layout>

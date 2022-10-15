@@ -20,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.5"
+        android:backgroundTint="#5CB3FF"
         android:ellipsize="end"
         android:lineSpacingExtra="@dimen/_2pxh"
         android:singleLine="true"
