@@ -2,10 +2,7 @@
 LIBSYS is an android application for efficiantly manage library and borrow books from library directly or post.
 
 <p float="left">
-    <img src="./docs/intro.gif" alt="intro" height="400">
-    <img src="./docs/challenges.gif" alt="challenges" height="400">
-    <img src="./docs/squat.gif" alt="squat" height="400">
-    <img src="./docs/pushup.gif" alt="pushup" height="400">
+    <img src="./img/UserHome.gif" alt="User Home" height="400">
 </p>
 
 
