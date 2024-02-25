@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class FCMSend {
     private static final String BASE_URL = "https://fcm.googleapis.com/fcm/send";
-    private static final String SERVER_KEY = "AAAAI-gJeJw:APA91bH5zbB9DhnEeJdIZO76wa-shrio_4ewUT4vpa7cud3Voxe0jknYZ0TFdrnEIWWGrOdp7m0Uz1_4-zHtspZTEkn4HrpOAK5GCh3dwlsF4rxikJhuGD289OZ9pzpciiPg2dLJpWPb";
+    private static final String SERVER_KEY = "----------------------------";
 
     public static void pushNotification(Context context, String token, String title, String body) {
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
